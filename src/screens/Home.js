@@ -1,10 +1,12 @@
 import React from 'react'
-import * as Location from 'expo-location';
+// import * as Location from 'expo-location';
+import { Location, Permissions } from 'expo-location';
 import { useEffect, useState } from 'react';
 import { ScrollView, TouchableOpacity } from 'react-native';
 import { Image, StyleSheet, Text, View } from 'react-native';
 import HomeCard from '../../Components/Card/HomeCard';
 import { useNavigation } from '@react-navigation/core'
+// import * as Permissions from 'expo-permissions';
 
 export default function Home() {
     const navigation = useNavigation();
